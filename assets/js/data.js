@@ -24,7 +24,7 @@ const DATA = {
     about : [
       "Information Technology Engineering graduate from Damascus University, specialised in Software Engineering and Information Systems, and currently a full-stack developer at 90soft.",
       "I work across the whole stack: requirements analysis, relational and document data modelling, REST API design, ERP customisation and system integration — then the frontend that sits on top of it. Framework- and domain-agnostic by training, I adapt quickly to whichever area a role requires.",
-      "My GitHub is a record of that range: a compiler with code generation in Java, an information-retrieval search engine in Python, a hospital ERP on Odoo 17, real-time full-stack applications on the MERN stack, and AI search algorithms applied to games."
+      "My GitHub is a record of that range: a compiler with code generation in Java, a hybrid search engine in Python, a Raft-replicated distributed system, a hospital ERP on Odoo 17, real-time full-stack applications on the MERN stack, and AI search algorithms applied to games."
     ],
     location : "Al-Abasien, Damascus, Syria",
     availability : "Open to IT Engineer & Software Engineer roles",
@@ -217,40 +217,40 @@ const DATA = {
       title    : "Advanced Banking System",
       category : "Software Design",
       accent   : "violet",
-      summary  : "A banking system built as a study in object-oriented architecture — accounts, transactions and operations modelled through classic design patterns rather than ad-hoc code.",
-      tech     : ["Java", "OOP", "Design Patterns"]
+      summary  : "A layered Spring Boot banking API whose domain is built from design patterns — State for the account lifecycle, Strategy for interest, Decorator for overdraft and premium features, Composite for account groups, Chain of Responsibility for the transaction pipeline and Observer for domain events.",
+      tech     : ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "Design Patterns"]
     },
     {
       repo     : "Angular-Compiler-Code-Generation",
       title    : "Angular Compiler — Code Generation",
       category : "Compilers",
       accent   : "indigo",
-      summary  : "A compiler for a subset of the Angular template language, written in Java: lexical analysis, parsing into an AST, semantic checks and a code-generation stage that emits runnable output.",
-      tech     : ["Java", "ANTLR", "AST", "Code Generation"]
+      summary  : "A compiler for Angular templates and CSS, written in Java: ANTLR lexer and parser, a visitor that builds a typed AST, a symbol table with semantic error checks, and a code generator that emits runnable HTML, CSS and JavaScript.",
+      tech     : ["Java", "ANTLR", "AST", "Symbol Table", "Code Generation"]
     },
     {
       repo     : "ir-search-engine",
       title    : "Information Retrieval Search Engine",
       category : "AI & Data",
       accent   : "cyan",
-      summary  : "A search engine over a document corpus in Python: text preprocessing, an inverted index, TF-IDF vector ranking and evaluation against standard IR metrics.",
-      tech     : ["Python", "TF-IDF", "Inverted Index", "NLP"]
+      summary  : "A search engine over 500,000+ Quora and 240,000+ clinical-trial documents: TF-IDF, BM25 and dense retrieval with Sentence Transformers and FAISS, hybrid ranking with reciprocal rank fusion, sharded BM25 and learning-to-rank reranking — evaluated with MAP, nDCG@10, Precision@10 and Recall.",
+      tech     : ["Python", "Django REST", "React", "BM25", "FAISS", "Learning to Rank"]
     },
     {
       repo     : "secure-distributed-system",
       title    : "Secure Distributed System",
       category : "Systems & Security",
       accent   : "emerald",
-      summary  : "A distributed application built around its security model — authenticated communication between nodes, controlled access to shared resources and protection of data in transit.",
-      tech     : ["JavaScript", "Node.js", "Cryptography", "Distributed Systems"]
+      summary  : "A three-node Raft cluster — leader election, log replication, majority commits and failover — behind a custom load balancer with weighted round robin and consistent hashing, circuit breakers with exponential-backoff retry, and an Nginx gateway with a WAF and rate limiting. A React dashboard lets you fail the leader and watch the election.",
+      tech     : ["Node.js", "Raft", "Load Balancing", "Nginx WAF", "Docker", "React"]
     },
     {
       repo     : "MERN-auth",
       title    : "MERN Authentication",
       category : "Full-Stack",
       accent   : "amber",
-      summary  : "A complete authentication flow on the MERN stack: registration, login, hashed credentials, JWT sessions and protected routes on both the API and the client.",
-      tech     : ["MongoDB", "Express", "React", "Node.js", "JWT"]
+      summary  : "A complete authentication flow on the MERN stack: sign-up with email verification, login, forgot and reset password, bcrypt-hashed credentials, and JWT sessions in httpOnly cookies guarding protected routes.",
+      tech     : ["MongoDB", "Express", "React", "Node.js", "JWT", "bcrypt"]
     }
   ],
 
