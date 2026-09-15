@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wesam Soulaiman — Software Engineer</title>
+<meta name="description" content="Wesam Osama Soulaiman — Software Engineer and Full-Stack Developer from Damascus. Compilers, information retrieval, ERP, distributed systems and real-time web applications.">
+<meta name="author" content="Wesam Osama Soulaiman">
+<meta name="theme-color" content="#0b0f1e">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wesam Soulaiman — Software Engineer">
+<meta property="og:description" content="Full-stack engineer building systems end to end — APIs, data models, ERP and real-time interfaces.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/138688775?v=4">
+<meta property="og:url" content="https://wesam-soulaiman.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50' y='69' font-size='58' font-family='system-ui,sans-serif' font-weight='700' text-anchor='middle' fill='white'>W</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ══════════ decorative background ══════════ -->
+<div class="bg-canvas" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══════════ header ══════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-mark">W</span>
+      <span class="brand-text">Wesam<span class="brand-dim">Soulaiman</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#about"      class="nav-link">About</a>
+      <a href="#skills"     class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects"   class="nav-link">Projects</a>
+      <a href="#github"     class="nav-link">GitHub</a>
+      <a href="#contact"    class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
+        <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+
+<main id="main">
+
+<!-- ══════════ hero ══════════ -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <p class="eyebrow reveal">
+        <span class="pulse-dot"></span>
+        <span id="availability">Open to opportunities</span>
+      </p>
+
+      <h1 class="hero-title reveal" data-delay="1">
+        <span class="hero-hi">Hi, I'm</span>
+        <span class="hero-name" id="heroName">Wesam Soulaiman</span>
+      </h1>
+
+      <p class="hero-role reveal" data-delay="2">
+        <span class="role-static" id="heroTitle">Software Engineer</span>
+        <span class="role-sep">/</span>
+        <span class="role-rotate"><span id="roleText"></span><span class="caret"></span></span>
+      </p>
+
+      <p class="hero-tagline reveal" data-delay="3" id="heroTagline"></p>
+
+      <div class="hero-cta reveal" data-delay="4">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg viewBox="0 0 24 24" class="btn-ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#" class="btn btn-ghost" id="cvBtn" download>
+          <svg viewBox="0 0 24 24" class="btn-ico"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+
+      <div class="hero-links reveal" data-delay="5" id="heroLinks"></div>
+    </div>
+
+    <div class="hero-visual reveal" data-delay="2">
+      <div class="avatar-stack">
+        <div class="avatar-glow"></div>
+        <div class="avatar-ring"></div>
+        <img class="avatar" id="avatarImg" alt="Wesam Soulaiman" width="260" height="260" loading="eager">
+        <div class="float-chip chip-1">{ }</div>
+        <div class="float-chip chip-2">&lt;/&gt;</div>
+        <div class="float-chip chip-3">SQL</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrap">
+    <div class="stat-strip reveal" data-delay="6" id="statStrip"></div>
+  </div>
+</section>
+
+<!-- ══════════ about ══════════ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <p class="section-sub">Who I am and how I work.</p>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-text reveal" id="aboutText"></div>
+      <aside class="about-card reveal" data-delay="2">
+        <h3 class="card-title">At a glance</h3>
+        <dl class="fact-list" id="factList"></dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ skills ══════════ -->
+<section class="section section-alt" id="skills">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-sub">The stack I design, build and ship with.</p>
+    </header>
+    <div class="skill-grid" id="skillGrid"></div>
+  </div>
+</section>
+
+<!-- ══════════ experience & education ══════════ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience &amp; Education</h2>
+      <p class="section-sub">Where I have worked and what I studied.</p>
+    </header>
+
+    <div class="tl-columns">
+      <div class="tl-col reveal">
+        <h3 class="tl-heading">
+          <svg viewBox="0 0 24 24" class="tl-ico"><path d="M3 8h18v12H3zM8 8V5h8v3"/></svg>
+          Professional Experience
+        </h3>
+        <ol class="timeline" id="expTimeline"></ol>
+      </div>
+
+      <div class="tl-col reveal" data-delay="2">
+        <h3 class="tl-heading">
+          <svg viewBox="0 0 24 24" class="tl-ico"><path d="M12 4 2 9l10 5 10-5-10-5zM5 11v5c0 1.7 3.1 3 7 3s7-1.3 7-3v-5"/></svg>
+          Education
+        </h3>
+        <ol class="timeline" id="eduTimeline"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ highlight project ══════════ -->
+<section class="section section-alt" id="highlight" hidden>
+  <div class="wrap">
+    <article class="highlight-card reveal" id="highlightCard"></article>
+  </div>
+</section>
+
+<!-- ══════════ projects ══════════ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">Selected work. Stars and languages update live from GitHub.</p>
+    </header>
+
+    <div class="filter-bar reveal" id="filterBar" role="tablist" aria-label="Filter projects"></div>
+    <div class="project-grid" id="projectGrid"></div>
+
+    <div class="other-repos reveal" id="otherRepos" hidden>
+      <h3 class="other-title">More on GitHub</h3>
+      <p class="other-note" id="otherNote"></p>
+      <div class="repo-grid" id="repoGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ github stats ══════════ -->
+<section class="section section-alt" id="github">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">GitHub Activity</h2>
+      <p class="section-sub">Pulled live from the GitHub API — nothing hand-typed.</p>
+    </header>
+
+    <div class="gh-grid">
+      <div class="gh-card reveal">
+        <h3 class="card-title">Language Distribution</h3>
+        <div class="lang-bar" id="langBar"></div>
+        <ul class="lang-legend" id="langLegend"></ul>
+      </div>
+      <div class="gh-card reveal" data-delay="2">
+        <h3 class="card-title">Snapshot</h3>
+        <div class="gh-metrics" id="ghMetrics"></div>
+        <a class="btn btn-ghost btn-sm gh-profile-btn" id="ghProfileBtn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="btn-ico"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          Open GitHub profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ contact ══════════ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-sub">Open to IT Engineer and Software Engineer roles — and to interesting problems.</p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-cards reveal" id="contactCards"></div>
+      <div class="contact-cta reveal" data-delay="2">
+        <h3 class="cta-title">Let's build something.</h3>
+        <p class="cta-text">The fastest way to reach me is email. I reply to every message.</p>
+        <a class="btn btn-primary btn-lg" id="mailBtn">
+          <svg viewBox="0 0 24 24" class="btn-ico"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+          Send an Email
+        </a>
+        <a class="btn btn-ghost btn-lg" id="cvBtn2" download>
+          <svg viewBox="0 0 24 24" class="btn-ico"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ footer ══════════ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-left">
+      <span id="footerName">Wesam Soulaiman</span>
+      <span class="footer-dim"> — <span id="footerNote"></span></span>
+    </p>
+    <p class="footer-right">
+      <span class="footer-dim">&copy; <span id="year"></span></span>
+      <a href="#hero" class="to-top">Back to top
+        <svg viewBox="0 0 24 24" class="btn-ico"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

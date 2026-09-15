@@ -1,0 +1,10 @@
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# local scratch
+probe.html
+shot.html
