@@ -213,6 +213,14 @@ const DATA = {
      accent   -> violet | indigo | cyan | emerald | amber | rose */
   projects: [
     {
+      repo     : "Optical-Shop-Project",
+      title    : "Optical Shop API",
+      category : "Backend & APIs",
+      accent   : "rose",
+      summary  : "A Django REST Framework backend for an eyewear e-commerce platform — 24 models and 22 endpoints covering the catalogue (frames, collections, colors, shapes, lens types and options), carts, favourites, orders, customer prescriptions with uploaded images, wallets and store locations. JWT authentication on a custom user model, nested routers, filtering, search and pagination.",
+      tech     : ["Python", "Django REST", "MySQL", "JWT", "Djoser", "REST API Design"]
+    },
+    {
       repo     : "advanced-banking-system",
       title    : "Advanced Banking System",
       category : "Software Design",

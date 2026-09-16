@@ -31,6 +31,7 @@
     "AI & Data"        : '<path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4.5-4.5"/>',
     "Systems & Security":'<path d="M12 3 5 6v5c0 4.4 2.9 8.4 7 9.5 4.1-1.1 7-5.1 7-9.5V6l-7-3z"/>',
     "Full-Stack"       : '<path d="M3 5h18v5H3zM3 14h18v5H3zM7 7.5h.01M7 16.5h.01"/>',
+    "Backend & APIs"   : '<path d="M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
     _default           : '<path d="M4 6h16v12H4zM8 10l-2 2 2 2M16 10l2 2-2 2"/>'
   };
   const catIcon = (c) => CAT_ICON[c] || CAT_ICON._default;
